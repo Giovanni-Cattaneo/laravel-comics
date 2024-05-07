@@ -3,6 +3,21 @@
         background-color: #0282f9;
         color: white;
     }
+
+    img {
+        height: 90px;
+    }
+
+    .nav-link {
+        font-size: 1.15rem;
+        line-height: 6rem;
+        border-bottom: 5px solid transparent;
+    }
+
+    .nav-link:hover {
+        color: #0282f9;
+        border-bottom: 5px solid #0282f9;
+    }
 </style>
 
 <header>
@@ -19,30 +34,17 @@
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    @php
+                    $links = ['Characters', 'Comics', 'Movies', 'Tv', 'Games', 'Collectibles', 'Videos', 'Fans', 'News'];
+                    @endphp
+                    @foreach($links as $link)
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">Home
-                            <span class="visually-hidden">(current)</span></a>
+                        <strong><a class="nav-link " href="" aria-current="page">{{$link}}</a></strong>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Characters</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Comics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Movies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tv</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Games</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Collectibles</a>
-                    </li>
+                    @endforeach
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Shop</strong></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Action 1</a>
                             <a class="dropdown-item" href="#">Action 2</a>
