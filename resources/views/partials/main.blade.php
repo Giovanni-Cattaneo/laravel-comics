@@ -31,7 +31,7 @@
             @foreach ($products as $product)
             <div class="col-3 g-4">
                 <div class="card">
-                    <img class="card-img-top" src="{{$product['thumb']}}" alt="Title" />
+                    <a href="../single-page.blade.php"><img class="card-img-top" src="{{$product['thumb']}}" alt="Title" /></a>
                     <div class="card-body">
                         <h5 class="card-title">{{$product['title']}}</h5>
                     </div>

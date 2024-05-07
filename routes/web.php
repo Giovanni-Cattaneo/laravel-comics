@@ -17,3 +17,8 @@ Route::get('/', function () {
     $products = config('db.products');
     return view('home', compact('products'));
 })->name('home');
+
+Route::get('/single', function () {
+    $products = config('db.products');
+    return view('single-page', compact('products'));
+});
