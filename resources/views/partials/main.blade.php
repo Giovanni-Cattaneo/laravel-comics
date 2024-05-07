@@ -29,12 +29,11 @@
     <div class="container mt-5">
         <div class="row">
             @foreach ($products as $product)
-            <div class="col-4">
+            <div class="col-3 g-4">
                 <div class="card">
                     <img class="card-img-top" src="{{$product['thumb']}}" alt="Title" />
                     <div class="card-body">
-                        <h4 class="card-title">{{$product['title']}}</h4>
-                        <p class="card-text">Text</p>
+                        <h5 class="card-title">{{$product['title']}}</h5>
                     </div>
                 </div>
 
