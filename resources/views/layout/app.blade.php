@@ -22,9 +22,7 @@
         @yield('main-content')
     </main>
 
-    <footer>
-        <p>Ciao ecco il tuo footer</p>
-    </footer>
+    @include('partials.footer')
 
 </body>
 
