@@ -16,9 +16,7 @@
 </head>
 
 <body>
-    <header>
-        <h1>Ecco il tuo layout</h1>
-    </header>
+    @include('partials.header')
 
     <main>
         @yield('main-content')
