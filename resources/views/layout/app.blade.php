@@ -13,13 +13,33 @@
     <!-- Styles -->
     @vite('resources/js/app.js')
 
+    <style>
+        main {
+
+            & img {
+                width: 100%;
+                height: 600px;
+            }
+
+            .current {
+                background-color: #0282f9;
+                position: absolute;
+                top: 36.5rem;
+                left: 20rem;
+                color: white;
+            }
+
+        }
+    </style>
 
 </head>
 
 <body>
     @include('partials.header')
 
-    @include('partials.main')
+    <main>
+        @yield('main-content')
+    </main>
 
     @include('partials.footer')
 

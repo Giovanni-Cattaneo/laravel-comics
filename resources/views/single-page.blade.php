@@ -1,3 +1,5 @@
 @extends('layout.app')
 
-<p>ciao</p>
+@section('main-content')
+<p>cal_info</p>
+@endsection
