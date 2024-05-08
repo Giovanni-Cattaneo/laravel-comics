@@ -24,7 +24,13 @@ Route::get('/single', function () {
 })->name('detail');
 
 route::get('single/{id}', function ($id) {
-    $product = config('db.products')[$id];
+
+    if ($id >= 0 && $id < count(config('db.products'))) {
+        $product = config('db.products')[$id];
+    } else {
+        abort(404);
+    }
+
     // dd($product);
 
     return view('product', compact('product'));
