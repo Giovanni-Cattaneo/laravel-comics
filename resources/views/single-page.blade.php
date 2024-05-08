@@ -1,5 +1,5 @@
 @extends('layout.app')
 
 @section('main-content')
-<p>cal_info</p>
+<h1>Ecco il tuo fumetto</h1>
 @endsection
