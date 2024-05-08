@@ -15,6 +15,7 @@
 
     <style>
         main {
+            background-color: darkgray;
 
             & img {
                 width: 100%;
@@ -27,6 +28,14 @@
                 top: 36.5rem;
                 left: 20rem;
                 color: white;
+            }
+
+            .container {
+                .card-img-top {
+                    height: 200px;
+                    width: 100%;
+                }
+
             }
 
         }

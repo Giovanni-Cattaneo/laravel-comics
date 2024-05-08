@@ -13,7 +13,7 @@
     <div class="container mt-5">
         <div class="row">
             @foreach ($products as $product)
-            <div class="col-3 g-4">
+            <div class="col-2 g-4">
                 <div class="card">
                     <a href="{{route('detail')}}"><img class="card-img-top" src="{{$product['thumb']}}" alt="Title" /></a>
                     <div class="card-body">
