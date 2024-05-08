@@ -1,7 +1,7 @@
 <style>
     footer {
-        background-color: black;
         color: white;
+        background-color: black;
 
         & ul {
             list-style: none;

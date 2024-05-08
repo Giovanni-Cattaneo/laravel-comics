@@ -31,11 +31,15 @@
 
             .position-relative {
                 width: 100%;
-                background-color: darkgray;
+                background-color: black;
 
                 .card-img-top {
                     height: 200px;
                     width: 100%;
+                }
+
+                .text-center {
+                    color: white
                 }
             }
 

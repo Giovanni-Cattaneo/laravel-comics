@@ -17,11 +17,8 @@
                         <div class="card">
                             <a href="{{ route('single', ['id' => $index]) }}"><img class="card-img-top"
                                     src="{{ $product['thumb'] }}" alt="Title" /></a>
-                            <div class="card-body">
-                                <h5 class="card-title">{{ $product['title'] }}</h5>
-                            </div>
                         </div>
-
+                        <h5 class="text-center">{{ $product['title'] }}</h5>
                     </div>
                 @endforeach
             </div>
