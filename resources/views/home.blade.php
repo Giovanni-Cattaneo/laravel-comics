@@ -12,10 +12,10 @@
 
     <div class="container mt-5">
         <div class="row">
-            @foreach ($products as $product)
+            @foreach ($products as $index => $product)
             <div class="col-2 g-4">
                 <div class="card">
-                    <a href="{{route('detail')}}"><img class="card-img-top" src="{{$product['thumb']}}" alt="Title" /></a>
+                    <a href="{{route('single', ['id'=> $index])}}"><img class="card-img-top" src="{{$product['thumb']}}" alt="Title" /></a>
                     <div class="card-body">
                         <h5 class="card-title">{{$product['title']}}</h5>
                     </div>

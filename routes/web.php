@@ -28,4 +28,4 @@ route::get('single/{id}', function ($id) {
     // dd($product);
 
     return view('product', compact('product'));
-});
+})->name('single');
