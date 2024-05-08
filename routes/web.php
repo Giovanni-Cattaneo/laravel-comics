@@ -22,3 +22,10 @@ Route::get('/single', function () {
     $products = config('db.products');
     return view('single-page', compact('products'));
 })->name('detail');
+
+route::get('single/{id}', function ($id) {
+    $product = config('db.products')[$id];
+    // dd($product);
+
+    return view('product', compact('product'));
+});
