@@ -25,11 +25,12 @@ Route::get('/single', function () {
 
 route::get('single/{id}', function ($id) {
 
-    if ($id >= 0 && $id < count(config('db.products'))) {
-        $product = config('db.products')[$id];
-    } else {
-        abort(404);
-    }
+
+
+
+    abort_unless($id >= 0 && $id < count(config('db.products')), 404);
+
+    $product = config('db.products')[$id];
 
     // dd($product);
 

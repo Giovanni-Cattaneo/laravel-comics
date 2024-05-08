@@ -15,7 +15,6 @@
 
     <style>
         main {
-            background-color: darkgray;
 
             & img {
                 width: 100%;
@@ -30,13 +29,26 @@
                 color: white;
             }
 
-            .container {
+            .position-relative {
+                width: 100%;
+                background-color: darkgray;
+
                 .card-img-top {
                     height: 200px;
                     width: 100%;
                 }
-
             }
+
+
+            .single {
+
+                .single-comics {
+                    width: 300px;
+                    height: 450px;
+                }
+            }
+
+
 
         }
     </style>
