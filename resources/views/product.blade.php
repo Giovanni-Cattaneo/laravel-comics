@@ -1,14 +1,11 @@
 @extends('layout.app')
 
 @section('main-content')
-    <div class="container single d-flex">
-        <div>
-            <h1>{{ $product['title'] }}</h1>
+    <h1 class="text-center">{{ $product['title'] }}</h1>
+    <div class="container single d-flex gap-5">
+        <img class="single-comics" src="{{ $product['thumb'] }}" alt="">
 
-            <img class="single-comics" src="{{ $product['thumb'] }}" alt="">
-        </div>
-
-        <div class="card w-50 justify-self-center">
+        <div class="card">
             <div class="card-body">
                 <h4 class="card-title">{{ $product['series'] }}</h4>
                 <p class="card-text">{{ $product['description'] }}</p>
