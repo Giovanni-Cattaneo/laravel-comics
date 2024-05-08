@@ -21,4 +21,4 @@ Route::get('/', function () {
 Route::get('/single', function () {
     $products = config('db.products');
     return view('single-page', compact('products'));
-});
+})->name('detail');
